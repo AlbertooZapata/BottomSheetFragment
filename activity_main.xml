@@ -1,0 +1,21 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expandir"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_green_light"/>
+
+</android.support.design.widget.CoordinatorLayout>
