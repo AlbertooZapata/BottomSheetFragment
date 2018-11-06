@@ -2,15 +2,11 @@ package com.materiales.recursos.bottonsheets;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialogFragment;
-import android.support.design.widget.CoordinatorLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 @SuppressLint("ValidFragment")
 public class BottomDialogFragment extends BottomSheetDialogFragment {
@@ -23,5 +19,13 @@ public class BottomDialogFragment extends BottomSheetDialogFragment {
 
 
         return view;
+    }
+
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        //asigno el estilo greado en el archivo de styles.xml para quitar el fondo
+        setStyle(BottomSheetDialogFragment.STYLE_NORMAL, R.style.CustomBottomSheetDialogTheme);
+        return super.onCreateDialog(savedInstanceState);
+
     }
 }

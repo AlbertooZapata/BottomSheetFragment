@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //mBottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
         //mBottomSheetBehavior.setPeekHeight(0);
 
+
     }
 
     @Override
